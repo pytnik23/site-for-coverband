@@ -1,0 +1,20 @@
+{
+  "name": "site_for_coverband",
+  "description": "site for coverband",
+  "main": "index.js",
+  "authors": [
+    "Oleksii Teplenko <pytnik.tov@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
