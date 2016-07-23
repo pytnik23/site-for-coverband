@@ -5,6 +5,8 @@ body {
 }
 
 body h2 {
+  margin-top: 0;
+  margin-bottom: 60px;
   font-size: 2.1em;
   font-weight: normal;
 }
@@ -15,6 +17,7 @@ body h3 {
 }
 
 body section {
+  text-align: center;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -24,8 +27,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid #000;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 header a {
@@ -95,7 +99,7 @@ header .nav li .phone:hover {
 }
 
 .hero-unit .img-overlay h1 {
-  padding-top: 200px;
+  padding-top: 160px;
   font-size: 2.6em;
   font-weight: normal;
 }
@@ -107,7 +111,7 @@ header .nav li .phone:hover {
 
 .hero-unit .img-overlay .btn-main {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 10px 20px;
   border: 1px solid #73C5E1;
   -webkit-border-radius: 2px;
@@ -127,11 +131,85 @@ header .nav li .phone:hover {
   background-color: #FFF;
 }
 
-.why-coverband h2 {
-  margin-top: 0;
-  margin-bottom: 60px;
-}
-
 .why-we {
   background-color: #f0f0f0;
+}
+
+.why-we .punkt {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.why-we .punkt i {
+  font-size: 24px;
+  color: #73C5E1;
+  position: relative;
+  top: 16px;
+  left: 20px;
+}
+
+.why-we .video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.why-we .video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.why-we .action-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.why-we .action-form h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.why-we .action-form form .input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.why-we .action-form form .input input {
+  background: none;
+  border: none;
+}
+
+.why-we .action-form form .input input:focus {
+  outline: none;
+}
+
+.why-we .action-form form .input input#tel {
+  width: 100px;
+}
+
+.why-we .action-form form .input label {
+  border-bottom: 1px solid #73C5E1;
+}
+
+.why-we .action-form form .btn-submit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background: none;
+  border: 1px solid #73C5E1;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.why-we .action-form form .btn-submit:hover, .why-we .action-form form .btn-submit:focus {
+  color: #fff;
+  background-color: #73C5E1;
 }

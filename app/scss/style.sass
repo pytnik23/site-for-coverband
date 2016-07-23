@@ -6,6 +6,9 @@ body
 	font-size: 16px
 
 	h2
+		margin:
+			top: 0
+			bottom: 60px
 		font-size: 2.1em
 		font-weight: normal
 	h3
@@ -13,6 +16,7 @@ body
 		font-weight: normal
 
 	section
+		text-align: center
 		padding: 
 			top: 70px
 			bottom: 70px
@@ -22,8 +26,9 @@ header
 	top: 0
 	left: 0
 	right: 0
-	background-color: rgba(0,0,0,.2)
-	border-bottom: 1px solid #000
+	z-index: 1
+	background-color: rgba(0,0,0,.4)
+	border-bottom: 1px solid rgba(0,0,0,.25)
 	a 
 		color: #fff
 		&:hover, &:focus
@@ -70,7 +75,7 @@ header
 		background: rgba(0,0,0,.1)
 
 		h1
-			padding-top: 200px
+			padding-top: 160px
 			font-size: 2.6em
 			font-weight: normal
 		h2
@@ -78,7 +83,7 @@ header
 			font-weight: lighter
 		.btn-main
 			display: inline-block
-			margin-top: 40px
+			margin-top: 20px
 			padding: 10px 20px
 			border: 1px solid $main-color
 			border-radius: 2px
@@ -91,20 +96,69 @@ header
 .why-coverband
 	text-align: center
 	background-color: #FFF
-	h2 
-		margin:
-			top: 0
-			bottom: 60px
 
 .why-we
 	background-color: #f0f0f0
+	.punkt
+		margin-bottom: 20px
+		text-align: left
+		i
+			font-size: 24px
+			color: $main-color
+			position: relative
+			top: 16px
+			left: 20px
+	
 
 
+	.video-responsive
+		position: relative
+		padding-bottom: 56.25%
+		padding-top: 25px
+		height: 0
+	.video-responsive iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
 
-
-
-
-
+	// action element
+	.action-form
+		margin: 
+			top: 30px
+			bottom: 10px
+		padding-bottom: 30px
+		border-radius: 5px
+		background-color: #f9f9f9
+		h4
+			font-size: 20px
+			font-weight: normal
+		form
+			.input
+				margin:
+					top: 10px
+					bottom: 20px
+				input
+					background: none
+					border: none
+					&:focus
+						outline: none
+				input#tel
+					width: 100px
+				label
+					border-bottom: 1px solid $main-color
+			.btn-submit
+				padding: 
+					top: 10px
+					bottom: 10px
+				width: 100%
+				background: none
+				border: 1px solid $main-color
+				border-radius: 2px
+				&:hover, &:focus
+					color: #fff
+					background-color: $main-color
 
 
 
