@@ -1,0 +1,18 @@
+@media (min-width: 768px) {
+  body .steps .divider {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+  body .divider {
+    display: none;
+  }
+  body .why-coverband p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

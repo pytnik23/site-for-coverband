@@ -3,7 +3,7 @@ $main-color: #73C5E1
 body
 	font-family: 'Open Sans', sans-serif
 	font-weight: lighter
-	font-size: 16px
+	font-size: 15px
 
 	h2
 		margin:
@@ -20,6 +20,10 @@ body
 		padding: 
 			top: 70px
 			bottom: 70px
+	.divider
+		border-bottom: 1px solid #ccc
+		width: 50%
+		margin: 60px auto
 
 header
 	position: absolute
@@ -76,7 +80,7 @@ header
 
 		h1
 			padding-top: 160px
-			font-size: 2.6em
+			font-size: 2.5em
 			font-weight: normal
 		h2
 			font-size: 1.25em
@@ -96,6 +100,10 @@ header
 .why-coverband
 	text-align: center
 	background-color: #FFF
+	p 
+		padding: 
+			left: 40px
+			right: 40px
 
 .why-we
 	background-color: #f0f0f0
@@ -128,6 +136,8 @@ header
 		margin: 
 			top: 30px
 			bottom: 10px
+			left: 0
+			right: 0
 		padding-bottom: 30px
 		border-radius: 5px
 		background-color: #f9f9f9
@@ -160,6 +170,135 @@ header
 					color: #fff
 					background-color: $main-color
 
+.portfolio
+	padding: 0
+	#links
+		margin: 0 auto
+		max-width: 1500px
+		overflow: hidden
+
+.testimonials
+	h2
+		margin-bottom: 20px
+	.carousel
+		i 
+			font-size: 50px
+			color: #ddd
+		.item
+			display: none
+			&.active
+				display: block
+			margin: 
+				top: 25px
+				bottom: 40px
+			.profile-img
+				display: inline-block
+				width: 150px
+				height: 150px
+				border-radius: 100%
+			h4
+				margin: 10px auto
+				font-size: 1.2em
+				font-weight: normal
+			h5
+				margin: 0 auto
+				font-size: 1em
+				font-weight: normal
+				font-style: italic
+				color: #999
+			.divider
+				display: inline-block
+				margin: 20px auto
+
+			p 
+				color: #666
+				font-size: 1em
+				font-style: italic
+		ol
+			display: inline-block
+			padding-left: 0
+			li 
+				display: inline-block
+				cursor: pointer
+				width: 12px
+				height: 12px
+				border: 1px solid $main-color
+				border-radius: 100%
+				&.active, &:hover
+					background-color: $main-color
+
+
+.wrapper
+	color: #fff
+	text-shadow: 1px 1px 3px rgba(0,0,0,.5)
+	background: url(../images/main_photo415.jpg) top center no-repeat fixed
+	background-size: cover
+	.step
+		display: inline-block
+		width: 110px
+		height: 110px
+		border-radius: 100%
+		&.first
+			background: #73C5E1 url(../images/phone-call_w.png) center no-repeat
+		&.second
+			background: #73C5E1 url(../images/agreement_w.png) center no-repeat
+		&.third
+			background: #73C5E1 url(../images/confetti_w.png) center no-repeat
+	.step_mark
+		display: inline-block
+		margin: 
+			top: 40px
+			bottom: 20px
+		padding: 3px 10px
+		background-color: rgba(0,0,0,.3)
+		border-radius: 3px
+		font-size: .8em
+	.tel
+		display: inline-block
+		padding: 5px 20px
+		border: 1px solid $main-color
+		border-radius: 2px
+		&:hover, &:focus
+			background-color: $main-color
+			text-shadow: none
+			text-decoration: none
+		color: #fff
+		font-size: 1.2em
+	.steps-text
+		font-size: 1.2em
+	.steps-social
+		a
+			padding: 
+				left: 10px
+				right: 10px
+			color: #fff
+			font-size: 2.5em
+			&:hover, &:focus
+				color: rgba(255,255,255,.85)
+
+	footer
+		text-align: center
+		background-color: rgba(0,0,0,.3)
+		h3
+			margin: 
+				top: 50px
+			font-size: 1.8em
+		a 
+			display: inline-block
+			padding: 
+				left: 10px
+				right: 10px
+			color: #fff
+			font-size: 1.7em
+			&:hover, &:focus
+				color: rgba(255,255,255,.85)
+			&.social
+				font-size: 40px
+		.copyright
+			display: inline-block
+			margin: 
+				top: 50px
+				bottom: 20px
 
 
 
