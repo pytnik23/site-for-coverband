@@ -1,12 +1,33 @@
-@media (min-width: 768px) {
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  body header .nav .menu-button {
+    display: inline-block;
+  }
+  body .hero-unit h1 {
+    padding-top: 130px !important;
+  }
+}
+
+@media (min-width: 481px) {
+  body header .nav ul {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 769px) {
   body .steps .divider {
     display: none;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   body {
     font-size: 16px;
+  }
+  body header .nav .phone .phone-number {
+    display: inline-block;
   }
   body .divider {
     display: none;

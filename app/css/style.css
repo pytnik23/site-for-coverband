@@ -64,34 +64,57 @@ header .logo .band-style {
 
 header .nav {
   float: right;
+}
+
+header .nav .menu-button {
+  display: none;
+}
+
+header .nav .menu-button .fa-bars {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  right: 10px;
+  padding: 6px 8px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+header .nav ul {
+  display: none;
   padding-left: 0;
 }
 
-header .nav li {
+header .nav ul li {
   list-style-type: none;
   display: inline-block;
   padding-left: 20px;
 }
 
-header .nav li a {
+header .nav .phone {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
   padding: 5px 10px;
-}
-
-header .nav li .phone {
   border: 1px solid #73C5E1;
   -webkit-border-radius: 2px;
           border-radius: 2px;
 }
 
-header .nav li .phone:hover {
+header .nav .phone:hover {
   background-color: #73C5E1;
+}
+
+header .nav .phone .phone-number {
+  display: none;
 }
 
 .hero-unit {
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  background: #ccc url("../images/main_photo412.jpg") top center no-repeat;
+  background: #ccc url("../images/main_photo412.jpg") top center no-repeat fixed;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -229,6 +252,8 @@ header .nav li .phone:hover {
 
 .portfolio {
   padding: 0;
+  background: url(../images/main_photo415.jpg) top center no-repeat fixed;
+  background-size: cover;
 }
 
 .portfolio #links {
@@ -384,7 +409,7 @@ header .nav li .phone:hover {
 
 .wrapper footer h3 {
   margin-top: 50px;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 .wrapper footer a {
@@ -392,7 +417,7 @@ header .nav li .phone:hover {
   padding-left: 10px;
   padding-right: 10px;
   color: #fff;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .wrapper footer a:hover, .wrapper footer a:focus {
@@ -400,7 +425,7 @@ header .nav li .phone:hover {
 }
 
 .wrapper footer a.social {
-  font-size: 40px;
+  font-size: 2em;
 }
 
 .wrapper footer .copyright {
