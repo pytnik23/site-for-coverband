@@ -37,6 +37,9 @@ body
 		background-color: rgba(0,0,0,.5)
 		&:hover
 			background-color: $main-color
+	a
+		&:hover
+			text-decoration: none
 
 header
 	position: absolute
@@ -66,7 +69,7 @@ header
 		float: right
 		.menu-button
 			display: none
-			.fa-bars
+			.icon-bars
 				display: inline-block
 				position: relative
 				top: 3px
@@ -214,44 +217,48 @@ header
 	h2
 		margin-bottom: 20px
 	.carousel
+		position: relative
 		i 
 			font-size: 50px
 			color: #ddd
-		.item
-			display: none
-			&.active
-				display: block
+		.item-wrap
 			margin: 
 				top: 25px
 				bottom: 40px
-			.profile-img
-				display: inline-block
-				width: 150px
-				height: 150px
-				border-radius: 100%
-			h4
-				margin: 10px auto
-				font-size: 1.2em
-				font-weight: normal
-			h5
-				margin: 0 auto
-				font-size: 1em
-				font-weight: normal
-				font-style: italic
-				color: #999
-			.divider
-				display: inline-block
-				margin: 20px auto
+			.item
+				display: none
+				&.active
+					display: block
+				.profile-img
+					display: inline-block
+					width: 150px
+					height: 150px
+					border-radius: 100%
+				h4
+					margin: 10px auto
+					font-size: 1.2em
+					font-weight: normal
+				h5
+					margin: 0 auto
+					font-size: 1em
+					font-weight: normal
+					font-style: italic
+					color: #999
+				.divider
+					display: inline-block
+					margin: 20px auto
 
-			p 
-				color: #666
-				font-size: 1em
-				font-style: italic
+				p 
+					color: #666
+					font-size: 1em
+					font-style: italic
+					text-align: justify
 		ol
 			display: inline-block
 			padding-left: 0
 			li 
 				display: inline-block
+				margin: 3px
 				cursor: pointer
 				width: 12px
 				height: 12px

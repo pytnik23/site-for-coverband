@@ -38,7 +38,7 @@ $(function() {
     		if (target.length) {
     			$('html, body').animate({
     				scrollTop: target.offset().top
-    			}, 1000);
+    			}, 800);
     			return false;
     		}
     	}
@@ -86,4 +86,24 @@ $(function() {
 		return false;
 	});
 
+
+	// testimonials
+	var items 				= $('.carousel .item'),
+		carouselIndicators 	= $('.carousel-indicators');
+	
+	function sliderInit() {
+		for (var i = 0; i < items.length; i++) {
+			var li = document.createElement('li');
+			$(li).attr('data-item-index', i);
+			carouselIndicators.append(li);
+		}
+		carouselIndicators.find('li:first-child').addClass('active');
+	}
+	
+	var changeItem = function() {
+		
+	};
+
+	sliderInit();
+	// setInterval(changeItem, 1000);
 });

@@ -4,3 +4,6 @@ app/bower_components
 coverband.sublime-project
 coverband.sublime-workspace
 dist/
+*.rar
+*.zip
+*.7z

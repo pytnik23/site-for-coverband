@@ -46,6 +46,10 @@ body .scrollToTop:hover {
   background-color: #73C5E1;
 }
 
+body a:hover {
+  text-decoration: none;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -88,7 +92,7 @@ header .nav .menu-button {
   display: none;
 }
 
-header .nav .menu-button .fa-bars {
+header .nav .menu-button .icon-bars {
   display: inline-block;
   position: relative;
   top: 3px;
@@ -285,22 +289,29 @@ header .nav .phone .phone-number {
   margin-bottom: 20px;
 }
 
+.testimonials .carousel {
+  position: relative;
+}
+
 .testimonials .carousel i {
   font-size: 50px;
   color: #ddd;
 }
 
-.testimonials .carousel .item {
-  display: none;
+.testimonials .carousel .item-wrap {
   margin-top: 25px;
   margin-bottom: 40px;
 }
 
-.testimonials .carousel .item.active {
+.testimonials .carousel .item-wrap .item {
+  display: none;
+}
+
+.testimonials .carousel .item-wrap .item.active {
   display: block;
 }
 
-.testimonials .carousel .item .profile-img {
+.testimonials .carousel .item-wrap .item .profile-img {
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -308,13 +319,13 @@ header .nav .phone .phone-number {
           border-radius: 100%;
 }
 
-.testimonials .carousel .item h4 {
+.testimonials .carousel .item-wrap .item h4 {
   margin: 10px auto;
   font-size: 1.2em;
   font-weight: normal;
 }
 
-.testimonials .carousel .item h5 {
+.testimonials .carousel .item-wrap .item h5 {
   margin: 0 auto;
   font-size: 1em;
   font-weight: normal;
@@ -322,15 +333,16 @@ header .nav .phone .phone-number {
   color: #999;
 }
 
-.testimonials .carousel .item .divider {
+.testimonials .carousel .item-wrap .item .divider {
   display: inline-block;
   margin: 20px auto;
 }
 
-.testimonials .carousel .item p {
+.testimonials .carousel .item-wrap .item p {
   color: #666;
   font-size: 1em;
   font-style: italic;
+  text-align: justify;
 }
 
 .testimonials .carousel ol {
@@ -340,6 +352,7 @@ header .nav .phone .phone-number {
 
 .testimonials .carousel ol li {
   display: inline-block;
+  margin: 3px;
   cursor: pointer;
   width: 12px;
   height: 12px;
