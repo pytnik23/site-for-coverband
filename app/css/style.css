@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   font-size: 15px;
+  min-width: 300px;
 }
 
 body h2 {
@@ -26,6 +27,23 @@ body .divider {
   border-bottom: 1px solid #ccc;
   width: 50%;
   margin: 60px auto;
+}
+
+body .scrollToTop {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 3px 9px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  color: #fff;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body .scrollToTop:hover {
+  background-color: #73C5E1;
 }
 
 header {
@@ -81,7 +99,7 @@ header .nav .menu-button .fa-bars {
 }
 
 header .nav ul {
-  display: none;
+  display: inline-block;
   padding-left: 0;
 }
 
@@ -114,7 +132,7 @@ header .nav .phone .phone-number {
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  background: #ccc url("../images/main_photo412.jpg") top center no-repeat fixed;
+  background: #ccc url("../images/main_photo412_1920.jpg") top center no-repeat fixed;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -252,14 +270,15 @@ header .nav .phone .phone-number {
 
 .portfolio {
   padding: 0;
-  background: url(../images/main_photo415.jpg) top center no-repeat fixed;
-  background-size: cover;
+}
+
+.portfolio .container-fluid {
+  overflow: hidden;
+  padding: 0;
 }
 
 .portfolio #links {
   margin: 0 auto;
-  max-width: 1500px;
-  overflow: hidden;
 }
 
 .testimonials h2 {
@@ -336,7 +355,7 @@ header .nav .phone .phone-number {
 .wrapper {
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  background: url(../images/main_photo415.jpg) top center no-repeat fixed;
+  background: url(../images/main_photo415_1920.jpg) top center no-repeat fixed;
   background-size: cover;
 }
 

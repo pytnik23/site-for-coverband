@@ -4,6 +4,7 @@ body
 	font-family: 'Open Sans', sans-serif
 	font-weight: lighter
 	font-size: 15px
+	min-width: 300px
 
 	h2
 		margin:
@@ -24,6 +25,18 @@ body
 		border-bottom: 1px solid #ccc
 		width: 50%
 		margin: 60px auto
+	.scrollToTop
+		display: none
+		position: fixed
+		right: 20px
+		bottom: 20px
+		padding: 3px 9px
+		border-radius: 2px
+		color: #fff
+		vertical-align: middle
+		background-color: rgba(0,0,0,.5)
+		&:hover
+			background-color: $main-color
 
 header
 	position: absolute
@@ -62,7 +75,7 @@ header
 				color: #fff
 				font-size: 1.5em
 		ul
-			display: none
+			display: inline-block
 			padding-left: 0
 			li 
 				list-style-type: none
@@ -86,7 +99,7 @@ header
 	width: 100%
 	height: 100vh
 	min-height: 600px
-	background: #ccc url("../images/main_photo412.jpg") top center no-repeat fixed
+	background: #ccc url("../images/main_photo412_1920.jpg") top center no-repeat fixed
 	background-size: cover
 	text-align: center
 	color: #fff
@@ -189,13 +202,13 @@ header
 					background-color: $main-color
 
 .portfolio
+	.container-fluid
+		overflow: hidden
+		padding: 0
 	padding: 0
-	background: url(../images/main_photo415.jpg) top center no-repeat fixed
-	background-size: cover
 	#links
 		margin: 0 auto
-		max-width: 1500px
-		overflow: hidden
+		
 
 .testimonials
 	h2
@@ -251,7 +264,7 @@ header
 .wrapper
 	color: #fff
 	text-shadow: 1px 1px 3px rgba(0,0,0,.5)
-	background: url(../images/main_photo415.jpg) top center no-repeat fixed
+	background: url(../images/main_photo415_1920.jpg) top center no-repeat fixed
 	background-size: cover
 	.step
 		display: inline-block

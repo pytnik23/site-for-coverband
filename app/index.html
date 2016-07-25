@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Кавер-группа «Печворк» - это настоящий концерт, крутое музыкальное шоу прямо у Вас на празднике!">
 	<title>Кавер-группа | Печворк</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 	<!-- build:css css/vendor.min.css -->
 	<!-- bower:css -->
@@ -30,7 +30,7 @@
 </head>
 <body>
 	<!-- HEADER -->
-	<header>
+	<header id="header">
 		<div class="container">
 			<nav role="navigation" class="clearfix">
 				<a href="/" class="logo">
@@ -40,9 +40,9 @@
 			
 				<div class="nav">
 					<a href="#" class="menu-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
-					<ul>
+					<ul class="menu menu-hidden">
 						<li><a href="#portfolio">Портфолио</a></li>
-						<li><a href="#steps">Контакты</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 						
 					</ul>
 					<a href="tel:+380971890145" class="phone">
@@ -174,45 +174,47 @@
 
 	<!-- PORTFOLIO -->
 	<section class="portfolio">
-		<div id="links">
+		<div class="container-fluid">
 		    <div class="row">
-		    	<a href="images/coverband1.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband1" data-gallery>
-		    	    <img src="images/coverband1_tn.jpg" alt="coverband1">
-		    	</a>
-		    	<a href="images/coverband2.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband2" data-gallery>
-		    	    <img src="images/coverband2_tn.jpg" alt="coverband2">
-		    	</a>
-		    	<a href="images/coverband3.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband3" data-gallery>
-		    	    <img src="images/coverband3_tn.jpg" alt="coverband3">
-		    	</a>
-		    	<a href="images/coverband4.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband4" data-gallery>
-		    	    <img src="images/coverband4_tn.jpg" alt="coverband4">
-		    	</a>
-		    	<a href="images/coverband5.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband5" data-gallery>
-		    	    <img src="images/coverband5_tn.jpg" alt="coverband5">
-		    	</a>
-		    	<a href="images/coverband6.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband6" data-gallery>
-		    	    <img src="images/coverband6_tn.jpg" alt="coverband6">
-		    	</a>
-		    	<a href="images/coverband7.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband7" data-gallery>
-		    	    <img src="images/coverband7_tn.jpg" alt="coverband7">
-		    	</a>
-		    	<a href="images/coverband8.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband8" data-gallery>
-		    	    <img src="images/coverband8_tn.jpg" alt="coverband8">
-		    	</a>
-		    	<a href="images/coverband9.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband9" data-gallery>
-		    	    <img src="images/coverband9_tn.jpg" alt="coverband9">
-		    	</a>
-		    	<a href="images/coverband10.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband10" data-gallery>
-		    	    <img src="images/coverband10_tn.jpg" alt="coverband10">
-		    	</a>
-		    	<a href="images/coverband11.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband11" data-gallery>
-		    	    <img src="images/coverband11_tn.jpg" alt="coverband11">
-		    	</a>
-		    	<a href="images/coverband12.jpg" class="col-xs-6 col-sm-3 col-xl-2" title="coverband12" data-gallery>
-		    	    <img src="images/coverband12_tn.jpg" alt="coverband12">
-		    	</a>
-		    </div>
+				<div id="links">
+			    	<a href="images/coverband1.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband1" data-gallery>
+			    	    <img src="images/coverband1_tn.jpg" alt="coverband1">
+			    	</a>
+			    	<a href="images/coverband2.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband2" data-gallery>
+			    	    <img src="images/coverband2_tn.jpg" alt="coverband2">
+			    	</a>
+			    	<a href="images/coverband3.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband3" data-gallery>
+			    	    <img src="images/coverband3_tn.jpg" alt="coverband3">
+			    	</a>
+			    	<a href="images/coverband4.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband4" data-gallery>
+			    	    <img src="images/coverband4_tn.jpg" alt="coverband4">
+			    	</a>
+			    	<a href="images/coverband5.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband5" data-gallery>
+			    	    <img src="images/coverband5_tn.jpg" alt="coverband5">
+			    	</a>
+			    	<a href="images/coverband6.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband6" data-gallery>
+			    	    <img src="images/coverband6_tn.jpg" alt="coverband6">
+			    	</a>
+			    	<a href="images/coverband7.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband7" data-gallery>
+			    	    <img src="images/coverband7_tn.jpg" alt="coverband7">
+			    	</a>
+			    	<a href="images/coverband8.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband8" data-gallery>
+			    	    <img src="images/coverband8_tn.jpg" alt="coverband8">
+			    	</a>
+			    	<a href="images/coverband9.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband9" data-gallery>
+			    	    <img src="images/coverband9_tn.jpg" alt="coverband9">
+			    	</a>
+			    	<a href="images/coverband10.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband10" data-gallery>
+			    	    <img src="images/coverband10_tn.jpg" alt="coverband10">
+			    	</a>
+			    	<a href="images/coverband11.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband11" data-gallery>
+			    	    <img src="images/coverband11_tn.jpg" alt="coverband11">
+			    	</a>
+			    	<a href="images/coverband12.jpg" class="col-xxs-12 col-xs-6 col-sm-3 col-xl-2" title="coverband12" data-gallery>
+			    	    <img src="images/coverband12_tn.jpg" alt="coverband12">
+			    	</a>
+			    </div>
+			</div>
 		</div>
 	</section>
 	<!-- PORTFOLIO end-->
@@ -346,7 +348,7 @@
 	</div>
 
 	<!-- SCROLL UP -->
-	<a href="#header" class="scroll_up"><span class="icon-angle-up"></span></a>
+	<a href="#header" class="scrollToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 	
 	<!-- build:js js/vendor.min.js -->
 	<!-- bower:js -->

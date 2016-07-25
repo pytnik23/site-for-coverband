@@ -1,3 +1,18 @@
+@media (max-width: 420px) {
+  .col-xxs-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  body .hero-unit h1 {
+    padding-top: 50px !important;
+  }
+  body .hero-unit h2 {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   body {
     font-size: 14px;
@@ -5,20 +20,73 @@
   body header .nav .menu-button {
     display: inline-block;
   }
+  body header .nav .menu {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 38px;
+    left: 0;
+    right: 0;
+  }
+  body header .nav .menu.menu-hidden {
+    display: none;
+  }
+  body header .nav .menu li {
+    display: block;
+    text-align: center;
+  }
+  body header .nav .menu li a {
+    line-height: 3;
+  }
   body .hero-unit h1 {
     padding-top: 130px !important;
   }
+  body .hero-unit {
+    background: #ccc url("../images/main_photo412_480.jpg") top center no-repeat fixed;
+    background-size: cover;
+  }
+  body .wrapper {
+    background: url(../images/main_photo415_480.jpg) top center no-repeat fixed;
+    background-size: cover;
+  }
 }
 
-@media (min-width: 481px) {
-  body header .nav ul {
-    display: inline-block;
+@media (min-width: 481px) and (max-width: 768px) {
+  body .hero-unit {
+    background: #ccc url("../images/main_photo412_768.jpg") top center no-repeat fixed;
+    background-size: cover;
+  }
+  body .wrapper {
+    background: url(../images/main_photo415_768.jpg) top center no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  body .hero-unit {
+    background: #ccc url("../images/main_photo412_992.jpg") top center no-repeat fixed;
+    background-size: cover;
+  }
+  body .wrapper {
+    background: url(../images/main_photo415_992.jpg) top center no-repeat fixed;
+    background-size: cover;
   }
 }
 
 @media (min-width: 769px) {
   body .steps .divider {
     display: none;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  body .hero-unit {
+    background: #ccc url("../images/main_photo412_1280.jpg") top center no-repeat fixed;
+    background-size: cover;
+  }
+  body .wrapper {
+    background: url(../images/main_photo415_1280.jpg) top center no-repeat fixed;
+    background-size: cover;
   }
 }
 
@@ -35,5 +103,11 @@
   body .why-coverband p {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (min-width: 1570px) {
+  .col-xl-2 {
+    width: 16.66667%;
   }
 }

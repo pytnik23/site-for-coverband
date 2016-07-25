@@ -1,3 +1,13 @@
+@media (max-width: 420px)
+	.col-xxs-12
+		width: 100%
+@media screen and (max-width:768px) and (orientation:landscape)
+	body
+		.hero-unit
+			h1
+				padding-top: 50px !important
+			h2
+				margin-bottom: 20px
 @media (max-width: 480px)
 	body
 		font-size: 14px
@@ -5,33 +15,73 @@
 			.nav
 				.menu-button
 					display: inline-block
+				.menu
+					&.menu-hidden
+						display: none
+					display: block
+					position: absolute
+					background-color: rgba(0,0,0,.5)
+					top: 38px
+					left: 0
+					right: 0
+					li
+						display: block
+						text-align: center
+						a
+							line-height: 3
 		.hero-unit
 			h1
 				padding-top: 130px !important
 
-// @media (min-width: 481px) and (max-width: 768px)
-@media (min-width: 481px)
+		.hero-unit
+			background: #ccc url("../images/main_photo412_480.jpg") top center no-repeat fixed
+			background-size: cover
+		.wrapper
+			background: url(../images/main_photo415_480.jpg) top center no-repeat fixed
+			background-size: cover
+
+@media (min-width: 481px) and (max-width: 768px)
+	body	
+		.hero-unit
+			background: #ccc url("../images/main_photo412_768.jpg") top center no-repeat fixed
+			background-size: cover
+		.wrapper
+			background: url(../images/main_photo415_768.jpg) top center no-repeat fixed
+			background-size: cover
+
+//@media (min-width: 481px)
+
+@media (min-width: 769px) and (max-width: 992px)
 	body
-		header
-			.nav
-				ul
-					display: inline-block
-// @media (min-width: 769px) and (max-width: 992px)
+		.hero-unit
+			background: #ccc url("../images/main_photo412_992.jpg") top center no-repeat fixed
+			background-size: cover
+		.wrapper
+			background: url(../images/main_photo415_992.jpg) top center no-repeat fixed
+			background-size: cover
 @media (min-width: 769px)
 	body
 		.steps
 			.divider
 				display: none
 
-// @media (min-width: 993px) and (max-width: 1199px)
+@media (min-width: 993px) and (max-width: 1199px)
+	body
+		.hero-unit
+			background: #ccc url("../images/main_photo412_1280.jpg") top center no-repeat fixed
+			background-size: cover
+		.wrapper
+			background: url(../images/main_photo415_1280.jpg) top center no-repeat fixed
+			background-size: cover
 @media (min-width: 993px)
 	body
+		font-size: 16px
 		header
 			.nav
 				.phone
 					.phone-number
 						display: inline-block
-		font-size: 16px
+	
 		.divider
 			display: none
 
@@ -43,3 +93,13 @@
 
 
 // @media (min-width: 1200px)
+@media (min-width: 1570px)
+	.col-xl-2
+		width: 100/6 + %
+
+
+
+
+
+
+
