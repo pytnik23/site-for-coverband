@@ -3,3 +3,4 @@ node_modules
 app/bower_components
 coverband.sublime-project
 coverband.sublime-workspace
+dist/

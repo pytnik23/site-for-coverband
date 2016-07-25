@@ -167,7 +167,7 @@ header .nav .phone .phone-number {
   color: #fff;
 }
 
-.hero-unit .img-overlay .btn-main:hover {
+.hero-unit .img-overlay .btn-main:hover, .hero-unit .img-overlay .btn-main:focus {
   background-color: #73C5E1;
   text-decoration: none;
   text-shadow: none;
