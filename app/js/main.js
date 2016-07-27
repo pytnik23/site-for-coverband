@@ -70,8 +70,10 @@ $(function() {
 	$("#form").submit(function() {
 		var date = $("#date").val();
 		var tel = $("#tel").val();
-		if ( !(date && tel.length === 9) ) {
+		if ( !(date && tel) ) {
 			alert("Введите дату и номер телефона!");
+		} else if (tel.length !== 9) {
+			alert("Введите номер полностью!");
 		} else {
 			$.ajax({
 				type: "POST",
@@ -86,24 +88,4 @@ $(function() {
 		return false;
 	});
 
-
-	// testimonials
-	var items 				= $('.carousel .item'),
-		carouselIndicators 	= $('.carousel-indicators');
-	
-	function sliderInit() {
-		for (var i = 0; i < items.length; i++) {
-			var li = document.createElement('li');
-			$(li).attr('data-item-index', i);
-			carouselIndicators.append(li);
-		}
-		carouselIndicators.find('li:first-child').addClass('active');
-	}
-	
-	var changeItem = function() {
-		
-	};
-
-	sliderInit();
-	// setInterval(changeItem, 1000);
 });

@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
   body .hero-unit h1 {
-    padding-top: 50px !important;
+    padding-top: 60px !important;
   }
   body .hero-unit h2 {
     margin-bottom: 20px;

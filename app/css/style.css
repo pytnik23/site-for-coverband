@@ -46,7 +46,7 @@ body .scrollToTop:hover {
   background-color: #73C5E1;
 }
 
-body a:hover {
+body a:hover, body a:focus {
   text-decoration: none;
 }
 
@@ -305,10 +305,6 @@ header .nav .phone .phone-number {
 
 .testimonials .carousel .item-wrap .item {
   display: none;
-}
-
-.testimonials .carousel .item-wrap .item.active {
-  display: block;
 }
 
 .testimonials .carousel .item-wrap .item .profile-img {

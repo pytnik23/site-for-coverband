@@ -25,6 +25,7 @@ body
 		border-bottom: 1px solid #ccc
 		width: 50%
 		margin: 60px auto
+	
 	.scrollToTop
 		display: none
 		position: fixed
@@ -38,7 +39,7 @@ body
 		&:hover
 			background-color: $main-color
 	a
-		&:hover
+		&:hover, &:focus
 			text-decoration: none
 
 header
@@ -227,8 +228,6 @@ header
 				bottom: 40px
 			.item
 				display: none
-				&.active
-					display: block
 				.profile-img
 					display: inline-block
 					width: 150px
