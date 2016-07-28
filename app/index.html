@@ -21,6 +21,32 @@
 	<link rel="stylesheet" href="css/font.css">
 	<!-- endbuild -->
 
+	<style>
+		.swing {
+		    display: inline-block;
+		    position: relative;
+		    -moz-animation: swing 5s infinite ease-in-out;
+		    -moz-transform-origin: center;
+		    -webkit-animation: swing 5s infinite ease-in-out;
+		    -webkit-transform-origin: center;
+		}
+
+		@-moz-keyframes swing {
+		    0%{-moz-transform:rotate(0deg)}
+		    6%{-moz-transform:rotate(-20deg)}
+		    12%{-moz-transform:rotate(20deg)}
+		    18%{-moz-transform:rotate(0deg)}
+		    100%{-moz-transform:rotate(0deg)}
+		}
+		@-webkit-keyframes swing {
+		    0%{-webkit-transform:rotate(0deg)}
+		    6%{-webkit-transform:rotate(-20deg)}
+		    12%{-webkit-transform:rotate(20deg)}
+		    18%{-webkit-transform:rotate(0deg)}
+		    100%{-webkit-transform:rotate(0deg)}
+		}
+	</style>
+
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +73,7 @@
 						
 					</ul>
 					<a href="tel:+380971890145" class="phone">
-						<i class="icon icon-phone"></i>
+						<i class="icon icon-phone swing"></i>
 						<span class="phone-number">+38 (097) 189 01 45</span>
 					</a>
 				</div>
@@ -81,19 +107,19 @@
 			<h2>Почему стоит выбрать именно кавер-группу?</h2>
 			<div class="row">
 				<div class="col-md-4">
-					<div><img src="/images/fireworks.png" alt="emotions"></div>
+					<div><img src="images/fireworks.png" alt="emotions"></div>
 					<h3>Эмоции</h3>
 					<p>Это когда лента в соцсетях полностью заполнена впечатлениями от твоего праздника и все гости еще долго вспоминают, как было классно</p>
 				</div>
 				<div class="divider"></div>
 				<div class="col-md-4">
-					<div><img src="/images/music.png" alt="emotions"></div>
+					<div><img src="images/music.png" alt="emotions"></div>
 					<h3>Драйв</h3>
 					<p>Никакой диджей и вокалист не передаст энергетику живого исполнения, от которой невозможно усидеть на месте</p>
 				</div>
 				<div class="divider"></div>
 				<div class="col-md-4">
-					<div><img src="/images/idea.png" alt="emotions"></div>
+					<div><img src="images/idea.png" alt="emotions"></div>
 					<h3>Оригинальность</h3>
 					<p>Именно живая кавер-группа сможет музыкально подчеркнуть эксклюзивность мероприятия</p>
 				</div>

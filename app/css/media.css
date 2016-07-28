@@ -43,33 +43,51 @@
   }
   body .hero-unit {
     background: #ccc url("../images/main_photo412_480.jpg") top center no-repeat fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
   body .wrapper {
     background: url(../images/main_photo415_480.jpg) top center no-repeat fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   body .hero-unit {
     background: #ccc url("../images/main_photo412_768.jpg") top center no-repeat fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
   body .wrapper {
     background: url(../images/main_photo415_768.jpg) top center no-repeat fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   body .hero-unit {
     background: #ccc url("../images/main_photo412_992.jpg") top center no-repeat fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
   body .wrapper {
     background: url(../images/main_photo415_992.jpg) top center no-repeat fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
 }
 
@@ -82,11 +100,17 @@
 @media (min-width: 993px) and (max-width: 1199px) {
   body .hero-unit {
     background: #ccc url("../images/main_photo412_1280.jpg") top center no-repeat fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
   body .wrapper {
     background: url(../images/main_photo415_1280.jpg) top center no-repeat fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
 }
 

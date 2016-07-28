@@ -24,8 +24,8 @@ gulp.task('bower', function () {
 gulp.task('css', function() {
 	return gulp.src('app/scss/**/*.sass')
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-		.pipe(autoprefixer({ browsers: ['last 15 versions']}))
-		.pipe(gulp.dest('app/css/'))
+		.pipe(autoprefixer({ browsers: ['> 0%'], cascade: true}))
+		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({stream: true}));
 });
 
@@ -74,7 +74,7 @@ gulp.task('clean', function() {
 
 gulp.task('build', function(callback) {
 	runSequence('clean', 'css',
-		['imageMin', 'useref', 'php'],
+		['imageMin', 'useref', 'php', 'fonts'],
 		callback
 	);
 });

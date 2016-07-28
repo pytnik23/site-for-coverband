@@ -8,7 +8,7 @@ function Slider() {
 	var currentSlideIndex 		= 0;
 
 	// Slider Init
-	function sliderInit() {
+	this.__sliderInit = function() {
 		// calc height
 		var height = 0;
 		items.each(function(i, item) {
@@ -26,25 +26,28 @@ function Slider() {
 		}
 		carouselIndicators.find('li:first-child').addClass('active');
 		$(items[0]).addClass('active');
-
 	}
-	sliderInit();
+	this.__sliderInit();
 
 
 	var carouselIndicatorItems = carouselIndicators.find('li');
 
-	carouselIndicators.on('click', function() {
-		// TODO
+	carouselIndicators.on('click', function(e) {
+		e.preventDefault();
+		var target = e.target;
+		if (target.tagName !== 'LI' || $(target).hasClass('active')) return;
+		currentSlideIndex = +target.dataset.itemIndex;
+		__self.__render();
 	});
 
 	// change slider
 	this.nextSlide = function() {
-		if (currentSlideIndex === items.length - 1) {
+		currentSlideIndex++;
+		if (currentSlideIndex === items.length) {
 			currentSlideIndex = 0;
 			__self.__render();
 			return;
 		}
-		currentSlideIndex++;
 		__self.__render();
 	};
 
@@ -61,30 +64,28 @@ function Slider() {
 			}
 		});
 
-		carouselIndicatorItems.each(function(i, item) {
-			if ( $(item).hasClass('active') ) {
-				previousIndicator = $(item);
-				return;
-			}
-			
-		});
+		previousIndicator = carouselIndicators.find('.active');		
+		previousIndicator.removeClass('active');
 
-		previousItem.fadeOut(1000, function() {
+		currentIndicator = $(carouselIndicatorItems[currentSlideIndex]);
+		currentIndicator.addClass('active');
+
+		previousItem.fadeOut(300, function() {
 			previousItem.removeClass('active');
-			previousIndicator.removeClass('active');
 			currentItem = $(items[currentSlideIndex]);
-			currentIndicator = $(carouselIndicatorItems[currentSlideIndex]);
-
 			currentItem.addClass('active');
-			currentIndicator.addClass('active');
 			
 			currentItem.fadeIn(1000);
 		});
 		
 	};
 	this.__render();
-
 	
-	setInterval(this.nextSlide, 10000);
+	var timer = setInterval(this.nextSlide, 9000);
+	$('.carousel').hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(__self.nextSlide, 9000);
+	});
 }
 var slider = new Slider();
