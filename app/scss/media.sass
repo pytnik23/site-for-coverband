@@ -1,14 +1,14 @@
 @media (max-width: 420px)
 	.col-xxs-12
 		width: 100%
-@media screen and (max-width:768px) and (orientation:landscape)
+@media screen and (max-width:740px) and (orientation:landscape)
 	body
 		.hero-unit
-			min-height: 320px
-			h1
-				padding-top: 60px !important
-			h2
-				margin-bottom: 20px
+			.img-overlay
+				h1
+					padding-top: 40px 
+				h2
+					margin-bottom: 10px
 @media (max-width: 480px)
 	body
 		font-size: 14px
@@ -32,9 +32,6 @@
 						a
 							display: block
 							line-height: 4
-		.hero-unit
-			h1
-				padding-top: 130px !important
 
 		.hero-unit
 			background: #ccc url("../images/main_photo412_480.jpg") top center no-repeat fixed
@@ -100,8 +97,14 @@
 	.col-xl-2
 		width: 100/6 + %
 
-
-
+@media (max-height: 500px) and (orientation: portrait)
+	body
+		.hero-unit
+			.img-overlay
+				h1
+					padding-top: 80px
+				h2
+					margin-bottom: 20px
 
 
 

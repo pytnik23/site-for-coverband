@@ -30,6 +30,9 @@ $(function() {
 		} else {
 			scrollToTopButton.fadeOut();
 		}
+
+		//slider height
+		slider.slideHeight();
     });
 
     // hide mobile menu
