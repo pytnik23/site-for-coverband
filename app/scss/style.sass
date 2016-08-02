@@ -31,7 +31,7 @@ body
 		position: fixed
 		right: 20px
 		bottom: 20px
-		padding: 3px 9px
+		padding: 6px 12px
 		border-radius: 2px
 		color: #fff
 		vertical-align: middle
@@ -102,7 +102,7 @@ header
 .hero-unit
 	width: 100%
 	height: 100vh
-	min-height: 600px
+	min-height: 560px
 	background: #ccc url("../images/main_photo412_1920.jpg") top center no-repeat fixed
 	background-size: cover
 	text-align: center
@@ -189,9 +189,11 @@ header
 					border: none
 					&:focus
 						outline: none
+					&[placeholder]
+						text-align: center
 				input#tel
 					width: 100px
-				label
+				.label
 					border-bottom: 1px solid $main-color
 			.btn-submit
 				padding: 

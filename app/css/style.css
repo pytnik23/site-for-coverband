@@ -34,7 +34,7 @@ body .scrollToTop {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  padding: 3px 9px;
+  padding: 6px 12px;
   -webkit-border-radius: 2px;
      -moz-border-radius: 2px;
           border-radius: 2px;
@@ -137,7 +137,7 @@ header .nav .phone .phone-number {
 .hero-unit {
   width: 100%;
   height: 100vh;
-  min-height: 600px;
+  min-height: 560px;
   background: #ccc url("../images/main_photo412_1920.jpg") top center no-repeat fixed;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -256,11 +256,15 @@ header .nav .phone .phone-number {
   outline: none;
 }
 
+.why-we .action-form form .input input[placeholder] {
+  text-align: center;
+}
+
 .why-we .action-form form .input input#tel {
   width: 100px;
 }
 
-.why-we .action-form form .input label {
+.why-we .action-form form .input .label {
   border-bottom: 1px solid #73C5E1;
 }
 
