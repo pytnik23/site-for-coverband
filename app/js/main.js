@@ -1,4 +1,5 @@
 $(function() {
+	
 	// menu
 	var menu = $('.menu'),
 		menuButton = $('.menu-button');
@@ -80,13 +81,17 @@ $(function() {
 	
 	// submit form
 	$("#form").submit(function() {
-		var date = $("#date").val();
-		var tel = $("#tel").val();
-		if ( !(date && tel) ) {
-			alert("Введите дату и номер телефона!");
-		} else if (tel.length !== 9) {
-			alert("Введите номер полностью!");
+		var date = $("#date");
+		var tel = $("#tel");
+		if ( !date.val() ) {
+			date.focus();
+			date.closest('.label').css('border-bottom-color', 'red');
+		} else if ( !tel.val() || tel.val().length !== 9 ) {
+			date.closest('.label').css('border-bottom-color', '');
+			tel.focus();
+			tel.closest('.label').css('border-bottom-color', 'red');
 		} else {
+			tel.closest('.label').css('border-bottom-color', '');
 			$.ajax({
 				type: "POST",
 				url: "mail.php",
