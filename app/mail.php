@@ -9,7 +9,7 @@ if((isset($_POST['date'])&&$_POST['date']!="")&&(isset($_POST['phone'])&&$_POST[
                     </head>
                     <body>
                         <p>Дата: '.$_POST['date'].'</p>
-                        <p>Телефон: '.$_POST['phone'].'</p>                        
+                        <p>Телефон: +380'.$_POST['phone'].'</p>                        
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
