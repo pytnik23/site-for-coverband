@@ -1,1 +1,1 @@
-### The [site](https://pwcoverband.com.ua/) for coverband.
+### The [site](https://pytnik23.github.io/site_for_coverband/) for coverband.
