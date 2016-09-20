@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
   body .hero-unit .img-overlay h1 {
-    padding-top: 40px;
+    padding-top: 60px;
   }
   body .hero-unit .img-overlay h2 {
     margin-bottom: 10px;
@@ -26,7 +26,7 @@
     top: 38px;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
   }
   body header .nav .menu.menu-hidden {
     display: none;
@@ -41,56 +41,32 @@
     line-height: 4;
   }
   body .hero-unit {
-    background: #ccc url("../images/main_photo412_480.jpg") top center no-repeat fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-image: url("../images/main_photo412_480.jpg");
   }
   body .wrapper {
-    background: url(../images/main_photo415_480.jpg) top center no-repeat fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-image: url(../images/main_photo415_480.jpg);
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   body .hero-unit {
-    background: #ccc url("../images/main_photo412_768.jpg") top center no-repeat fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-image: url("../images/main_photo412_768.jpg");
   }
   body .wrapper {
-    background: url(../images/main_photo415_768.jpg) top center no-repeat fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-image: url(../images/main_photo415_768.jpg);
   }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   body .hero-unit {
-    background: #ccc url("../images/main_photo412_992.jpg") top center no-repeat fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-image: url("../images/main_photo412_992.jpg");
   }
   body .wrapper {
-    background: url(../images/main_photo415_992.jpg) top center no-repeat fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-image: url(../images/main_photo415_992.jpg);
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body .steps .divider {
     display: none;
   }
@@ -98,18 +74,10 @@
 
 @media (min-width: 993px) and (max-width: 1199px) {
   body .hero-unit {
-    background: #ccc url("../images/main_photo412_1280.jpg") top center no-repeat fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-image: url("../images/main_photo412_1280.jpg");
   }
   body .wrapper {
-    background: url(../images/main_photo415_1280.jpg) top center no-repeat fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-image: url(../images/main_photo415_1280.jpg);
   }
 }
 
@@ -141,23 +109,5 @@
   }
   body .hero-unit .img-overlay h2 {
     margin-bottom: 20px;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .hero-unit {
-    min-height: 100%;
-  }
-  .hero-unit .img-overlay {
-    min-height: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .hero-unit {
-    min-height: 100%;
-  }
-  .hero-unit .img-overlay {
-    min-height: 100%;
   }
 }

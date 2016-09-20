@@ -7,7 +7,7 @@ $(function() {
 	menuButton.click(function() {
 		menu.toggleClass("menu-hidden");
 	});
-	menuButton.blur(function() {
+	menuButton.on('blur', function() {
 		setTimeout(function() {
 			menu.addClass("menu-hidden");
 		}, 0);

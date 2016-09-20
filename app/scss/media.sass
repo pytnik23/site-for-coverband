@@ -6,7 +6,7 @@
 		.hero-unit
 			.img-overlay
 				h1
-					padding-top: 40px 
+					padding-top: 60px 
 				h2
 					margin-bottom: 10px
 @media (max-width: 480px)
@@ -24,7 +24,7 @@
 					top: 38px
 					left: 0
 					right: 0
-					background-color: rgba(0,0,0,.5)
+					background-color: rgba(0,0,0,.9)
 					li
 						display: block
 						padding-left: 0
@@ -34,32 +34,26 @@
 							line-height: 4
 
 		.hero-unit
-			background: #ccc url("../images/main_photo412_480.jpg") top center no-repeat fixed
-			background-size: cover
+			background-image: url("../images/main_photo412_480.jpg")
 		.wrapper
-			background: url(../images/main_photo415_480.jpg) top center no-repeat fixed
-			background-size: cover
+			background-image: url(../images/main_photo415_480.jpg)
 
 @media (min-width: 481px) and (max-width: 768px)
 	body	
 		.hero-unit
-			background: #ccc url("../images/main_photo412_768.jpg") top center no-repeat fixed
-			background-size: cover
+			background-image: url("../images/main_photo412_768.jpg")
 		.wrapper
-			background: url(../images/main_photo415_768.jpg) top center no-repeat fixed
-			background-size: cover
+			background-image: url(../images/main_photo415_768.jpg)
 
 //@media (min-width: 481px)
 
 @media (min-width: 769px) and (max-width: 992px)
 	body
 		.hero-unit
-			background: #ccc url("../images/main_photo412_992.jpg") top center no-repeat fixed
-			background-size: cover
+			background-image: url("../images/main_photo412_992.jpg")
 		.wrapper
-			background: url(../images/main_photo415_992.jpg) top center no-repeat fixed
-			background-size: cover
-@media (min-width: 769px)
+			background-image: url(../images/main_photo415_992.jpg)
+@media (min-width: 768px)
 	body
 		.steps
 			.divider
@@ -68,11 +62,9 @@
 @media (min-width: 993px) and (max-width: 1199px)
 	body
 		.hero-unit
-			background: #ccc url("../images/main_photo412_1280.jpg") top center no-repeat fixed
-			background-size: cover
+			background-image: url("../images/main_photo412_1280.jpg")
 		.wrapper
-			background: url(../images/main_photo415_1280.jpg) top center no-repeat fixed
-			background-size: cover
+			background-image: url(../images/main_photo415_1280.jpg)
 @media (min-width: 993px)
 	body
 		font-size: 16px
@@ -105,20 +97,3 @@
 					padding-top: 80px
 				h2
 					margin-bottom: 20px
-
-// media for IOS
-//  for iPads
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
-	.hero-unit
-		min-height: 100%
-		.img-overlay
-			min-height: 100%
-//  for iPhones
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
-	.hero-unit
-		min-height: 100%
-		.img-overlay
-			min-height: 100%
-
-
-
