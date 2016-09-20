@@ -81,7 +81,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', function(callback) {
-	runSequence('clean', 'bower', 'css',
+	runSequence('clean', 'css',
 		['imageMin', 'useref', 'php', 'fonts', 'htaccess', 'robots'],
 		callback
 	);
