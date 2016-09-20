@@ -224,6 +224,7 @@ header .nav .phone .phone-number {
 }
 
 .why-we .video-responsive iframe {
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -292,6 +293,10 @@ header .nav .phone .phone-number {
 
 .portfolio {
   padding: 0;
+}
+
+.portfolio h2 {
+  display: none;
 }
 
 .portfolio .container-fluid {
