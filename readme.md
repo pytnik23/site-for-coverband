@@ -7,4 +7,5 @@
 - an action form that sends data to the client's email
 - a nice carousel of testimonials
 ___
+
 Technology and instruments that I used:
