@@ -1,4 +1,5 @@
-# [Landing Page for music group](https://pwcoverband.com.ua/)
+# Landing Page for music group
+[Github demo](https://pytnik23.github.io/site-for-coverband/) | [www](https://pwcoverband.com.ua/)
 
 ### My task was to create a fully responsive landing page for a cover band. On the page need to be:
 
