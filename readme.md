@@ -6,6 +6,6 @@
 - a photo-gallery with a full-width and touch friendly interface
 - an action form that sends data to the client's email
 - a nice carousel of testimonials
-- - -
+_ _ _
 Technology and instruments that I used:
 HTML5, CSS3, Javascript, jQuery, AJAX, Bootstrap(only grid), PHP, Gulp, Git.
