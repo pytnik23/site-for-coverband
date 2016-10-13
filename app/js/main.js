@@ -34,6 +34,8 @@ $(function() {
 
 		//slider height
 		slider.slideHeight();
+
+		
     });
 
     // hide mobile menu
