@@ -18,6 +18,9 @@ $(function() {
 		heroUnitBg = $(".hero-unit"),
 		speed = -0.5;
 
+	// scroll magic
+	var slideUpBlock = document.querySelectorAll('.slide-up');
+
     documentEl.on('scroll', function() {
     	// parallax
     	var currScrollPos = documentEl.scrollTop();
@@ -35,7 +38,15 @@ $(function() {
 		//slider height
 		slider.slideHeight();
 
-		
+		// scroll magic
+		var lowerEdge = window.pageYOffset;
+
+		if ( slideUpBlock[0].clientHeight < lowerEdge ) {
+			for (var i = 0; i < slideUpBlock.length; i++) {
+				slideUpBlock[i].querySelector('h3').classList.remove('redyToSlide');
+				slideUpBlock[i].querySelector('p').classList.remove('redyToSlide');
+			}
+		}
     });
 
     // hide mobile menu

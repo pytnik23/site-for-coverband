@@ -146,6 +146,12 @@ header
 		padding: 
 			left: 40px
 			right: 40px
+	.slide-up
+		h3, p
+			transition: opacity 1s ease-out .5s, transform 1s ease-out .5s
+			&.redyToSlide
+				transform: translateY(50px)
+				opacity: 0
 
 .why-we
 	background-color: #f0f0f0
