@@ -19,7 +19,10 @@ $(function() {
 		speed = -0.5;
 
 	// scroll magic
-	var slideUpBlock = document.querySelectorAll('.slide-up');
+	var slideUpBlock 			= document.querySelectorAll('.slide-up'),
+		slideRightBlock 		= document.querySelectorAll('.punkt');
+	var slideUpBlockCoords 		= slideUpBlock[0].getBoundingClientRect(),
+		slideRightBlockCoords 	= slideRightBlock[0].getBoundingClientRect();
 
     documentEl.on('scroll', function() {
     	// parallax
@@ -39,12 +42,17 @@ $(function() {
 		slider.slideHeight();
 
 		// scroll magic
-		var lowerEdge = window.pageYOffset;
+		var lowerEdge = window.pageYOffset + window.innerHeight;
 
-		if ( slideUpBlock[0].clientHeight < lowerEdge ) {
+		if ( slideUpBlockCoords.top < lowerEdge ) {
 			for (var i = 0; i < slideUpBlock.length; i++) {
 				slideUpBlock[i].querySelector('h3').classList.remove('redyToSlide');
 				slideUpBlock[i].querySelector('p').classList.remove('redyToSlide');
+			}
+		}
+		if ( slideRightBlockCoords.top < lowerEdge ) {
+			for (var i = 0; i < slideRightBlock.length; i++) {
+				slideRightBlock[i].classList.remove('redyToSlide');
 			}
 		}
     });

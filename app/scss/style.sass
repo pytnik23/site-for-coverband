@@ -148,10 +148,18 @@ header
 			right: 40px
 	.slide-up
 		h3, p
-			transition: opacity 1s ease-out .5s, transform 1s ease-out .5s
 			&.redyToSlide
 				transform: translateY(50px)
 				opacity: 0
+		&.slide1
+			h3, p
+				transition: opacity 1s ease-out .5s, transform 1s ease-out .5s
+		&.slide2
+			h3, p
+				transition: opacity 1s ease-out .7s, transform 1s ease-out .7s
+		&.slide3
+			h3, p
+				transition: opacity 1s ease-out .9s, transform 1s ease-out .9s
 
 .why-we
 	background-color: #f0f0f0
@@ -164,6 +172,15 @@ header
 			position: relative
 			top: 16px
 			left: 20px
+		&:nth-child(1)
+			transition: opacity 1s ease-out .5s, transform 1s ease-out .5s
+		&:nth-child(2)
+			transition: opacity 1s ease-out .7s, transform 1s ease-out .7s
+		&:nth-child(3)
+			transition: opacity 1s ease-out .9s, transform 1s ease-out .9s
+		&.redyToSlide
+			opacity: 0
+			transform: translateX(-100px)
 	
 	.video-responsive
 		position: relative

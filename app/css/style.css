@@ -199,7 +199,16 @@ header .nav .phone .phone-number {
   padding-right: 40px;
 }
 
-.why-coverband .slide-up h3, .why-coverband .slide-up p {
+.why-coverband .slide-up h3.redyToSlide, .why-coverband .slide-up p.redyToSlide {
+  -webkit-transform: translateY(50px);
+     -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+       -o-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+}
+
+.why-coverband .slide-up.slide1 h3, .why-coverband .slide-up.slide1 p {
   -webkit-transition: opacity 1s ease-out .5s, -webkit-transform 1s ease-out .5s;
   transition: opacity 1s ease-out .5s, -webkit-transform 1s ease-out .5s;
   -o-transition: opacity 1s ease-out .5s, -o-transform 1s ease-out .5s;
@@ -208,13 +217,22 @@ header .nav .phone .phone-number {
   transition: opacity 1s ease-out .5s, transform 1s ease-out .5s, -webkit-transform 1s ease-out .5s, -moz-transform 1s ease-out .5s, -o-transform 1s ease-out .5s;
 }
 
-.why-coverband .slide-up h3.redyToSlide, .why-coverband .slide-up p.redyToSlide {
-  -webkit-transform: translateY(50px);
-     -moz-transform: translateY(50px);
-      -ms-transform: translateY(50px);
-       -o-transform: translateY(50px);
-          transform: translateY(50px);
-  opacity: 0;
+.why-coverband .slide-up.slide2 h3, .why-coverband .slide-up.slide2 p {
+  -webkit-transition: opacity 1s ease-out .7s, -webkit-transform 1s ease-out .7s;
+  transition: opacity 1s ease-out .7s, -webkit-transform 1s ease-out .7s;
+  -o-transition: opacity 1s ease-out .7s, -o-transform 1s ease-out .7s;
+  -moz-transition: opacity 1s ease-out .7s, transform 1s ease-out .7s, -moz-transform 1s ease-out .7s;
+  transition: opacity 1s ease-out .7s, transform 1s ease-out .7s;
+  transition: opacity 1s ease-out .7s, transform 1s ease-out .7s, -webkit-transform 1s ease-out .7s, -moz-transform 1s ease-out .7s, -o-transform 1s ease-out .7s;
+}
+
+.why-coverband .slide-up.slide3 h3, .why-coverband .slide-up.slide3 p {
+  -webkit-transition: opacity 1s ease-out .9s, -webkit-transform 1s ease-out .9s;
+  transition: opacity 1s ease-out .9s, -webkit-transform 1s ease-out .9s;
+  -o-transition: opacity 1s ease-out .9s, -o-transform 1s ease-out .9s;
+  -moz-transition: opacity 1s ease-out .9s, transform 1s ease-out .9s, -moz-transform 1s ease-out .9s;
+  transition: opacity 1s ease-out .9s, transform 1s ease-out .9s;
+  transition: opacity 1s ease-out .9s, transform 1s ease-out .9s, -webkit-transform 1s ease-out .9s, -moz-transform 1s ease-out .9s, -o-transform 1s ease-out .9s;
 }
 
 .why-we {
@@ -232,6 +250,42 @@ header .nav .phone .phone-number {
   position: relative;
   top: 16px;
   left: 20px;
+}
+
+.why-we .punkt:nth-child(1) {
+  -webkit-transition: opacity 1s ease-out .5s, -webkit-transform 1s ease-out .5s;
+  transition: opacity 1s ease-out .5s, -webkit-transform 1s ease-out .5s;
+  -o-transition: opacity 1s ease-out .5s, -o-transform 1s ease-out .5s;
+  -moz-transition: opacity 1s ease-out .5s, transform 1s ease-out .5s, -moz-transform 1s ease-out .5s;
+  transition: opacity 1s ease-out .5s, transform 1s ease-out .5s;
+  transition: opacity 1s ease-out .5s, transform 1s ease-out .5s, -webkit-transform 1s ease-out .5s, -moz-transform 1s ease-out .5s, -o-transform 1s ease-out .5s;
+}
+
+.why-we .punkt:nth-child(2) {
+  -webkit-transition: opacity 1s ease-out .7s, -webkit-transform 1s ease-out .7s;
+  transition: opacity 1s ease-out .7s, -webkit-transform 1s ease-out .7s;
+  -o-transition: opacity 1s ease-out .7s, -o-transform 1s ease-out .7s;
+  -moz-transition: opacity 1s ease-out .7s, transform 1s ease-out .7s, -moz-transform 1s ease-out .7s;
+  transition: opacity 1s ease-out .7s, transform 1s ease-out .7s;
+  transition: opacity 1s ease-out .7s, transform 1s ease-out .7s, -webkit-transform 1s ease-out .7s, -moz-transform 1s ease-out .7s, -o-transform 1s ease-out .7s;
+}
+
+.why-we .punkt:nth-child(3) {
+  -webkit-transition: opacity 1s ease-out .9s, -webkit-transform 1s ease-out .9s;
+  transition: opacity 1s ease-out .9s, -webkit-transform 1s ease-out .9s;
+  -o-transition: opacity 1s ease-out .9s, -o-transform 1s ease-out .9s;
+  -moz-transition: opacity 1s ease-out .9s, transform 1s ease-out .9s, -moz-transform 1s ease-out .9s;
+  transition: opacity 1s ease-out .9s, transform 1s ease-out .9s;
+  transition: opacity 1s ease-out .9s, transform 1s ease-out .9s, -webkit-transform 1s ease-out .9s, -moz-transform 1s ease-out .9s, -o-transform 1s ease-out .9s;
+}
+
+.why-we .punkt.redyToSlide {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+     -moz-transform: translateX(-100px);
+      -ms-transform: translateX(-100px);
+       -o-transform: translateX(-100px);
+          transform: translateX(-100px);
 }
 
 .why-we .video-responsive {
